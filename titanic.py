@@ -1,5 +1,3 @@
-
-#导入处理数据包
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -9,7 +7,7 @@ import matplotlib.pyplot as plt
 train = pd.read_csv(r"C:\Users\74308\Desktop\a\train.csv")
 #测试数据集
 test  = pd.read_csv(r"C:\Users\74308\Desktop\a\test.csv")
-#这里要记住训练数据集有891条数据，方便后面从中拆分出测试数据集用于提交Kaggle结果
+#这里要记住训练数据集有891条数据，方便后面从中拆分出测试数据集用于提交
 print ('训练数据集:',train.shape,'测试数据集:',test.shape)
 rowNum_train=train.shape[0]
 rowNum_test=test.shape[0]
@@ -124,7 +122,6 @@ full_X = pd.concat( [titleDf,#头衔
                      cabinDf,#船舱号
                      embarkedDf,#登船港口
                     ] , axis=1 )
-
 
 
 sourceRow=891
